@@ -1,3 +1,10 @@
+# ohmyzsh
+export ZSH="/Users/jacobherrington/.oh-my-zsh"
+ZSH_THEME="jacobherrington"
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+plugins=(autojump git git-extras gem bundler rbenv rails colorize zsh-autosuggestions)
+source $ZSH/oh-my-zsh.sh
+
 # zsh
 source ~/.config/zsh/aliases
 source ~/.config/zsh/exports
@@ -6,4 +13,5 @@ source ~/.config/zsh/path
 # git-extras
 source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
 
+# rbenv
 eval "$(rbenv init -)"
