@@ -1,0 +1,9 @@
+# zsh
+source ~/dotfiles/zsh/aliases
+source ~/dotfiles/zsh/exports
+source ~/dotfiles/zsh/path
+
+# git-extras
+source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
+
+eval "$(rbenv init -)"
