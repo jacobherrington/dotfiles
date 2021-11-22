@@ -1,13 +1,14 @@
 # Aliases
 
-# Programs
-alias be='bundle exec'
-alias cm='chezmoi'
-alias emax="env TERM=xterm-256color emacs -nw"
+# Utility
 alias now="date +\"%m_%d_%Y\""
+alias src="cd ~/src"
+
+# Programs
+alias cm='chezmoi'
+alias s='ncspot'
 
 # Git
-alias gco='git checkout'
 alias revise='git commit -am "c" && git rebase -i HEAD~2'
 alias amend='git add . && git commit --amend'
 alias cleanup-branches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
