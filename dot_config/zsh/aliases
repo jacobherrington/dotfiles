@@ -12,3 +12,15 @@ alias s='ncspot'
 alias revise='git commit -am "c" && git rebase -i HEAD~2'
 alias amend='git add . && git commit --amend'
 alias cleanup-branches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+
+# Functions
+
+# I have ADHD; now I can remind myself why I opened a terminal
+doing () {
+  if [ -z "$1" ]
+    then
+      echo $_DOING
+    else
+      export _DOING=$1
+  fi
+}
